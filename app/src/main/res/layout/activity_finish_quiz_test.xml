@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.finish_quiz.FinishQuizTest">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/infoAppBackground">
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cancel"
+            android:layout_margin="20dp"
+            android:layout_gravity="end"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginVertical="40dp"
+            app:cardCornerRadius="30dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#1A1D25"
+            android:layout_height="400dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center|top"
+                android:src="@drawable/win1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congrats!"
+                android:fontFamily="@font/acme_regular"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="28sp"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/win_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="28sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/infoQuizBarColor2"/>
+
+            <TextView
+                android:id="@+id/bestScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Your best score is: 7"
+                android:fontFamily="@font/titanone_regular"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_marginTop="55dp"
+                android:textColor="@color/infoQuizBarColor2"/>
+
+            <TextView
+                android:id="@+id/textResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your attempted 19 questions \n   from that 10 answers right"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/worksans_font"
+                android:textSize="13sp"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

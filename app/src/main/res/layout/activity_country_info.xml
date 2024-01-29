@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.main.MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/infoQuizBarColor1"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/finishDescription"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|start"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/back"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/infoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/titanone_regular"
+                android:text="Country"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#21252F">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/infoFlag"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:padding="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/usa"/>
+
+                <TextView
+                    android:id="@+id/infoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oʻzbek tilidagi Vikilugʻatga xush kelibsiz! Vikilugʻat hamjihatlik bilan erkin va koʻp tilli lugʻat tuzish uchun yaratilgan loyihadir. Uning maqsadi dunyoning barcha tillaridagi barcha soʻzlarga oʻzbekcha izoh berishdir.
+Vikipediya ochiq ensiklopediyasiga leksik hamroh sifatida yaratilgan Vikilugʻat bugungi kunga kelib oddiy lugʻatlardan oʻzib ketdi. Unda hozir tezaurus, qofiya boʻyicha qoʻllanma, iboralar kitoblari, til statistikalari va koʻplab ilovalar bor. Biz soʻzning izohini berish bilan cheklanib qolmay, uni toʻliq tushunish uchun yetarlicha maʼlumot berishga harakat qilamiz. Shuning uchun lugʻatimiz sahifalarida soʻzning etimologiyasini, talaffuzini, sinonimlarini, antonimlarini, u ishtirok etgan sodda iqtiboslarni va tarjima soʻzlarni berib boramiz.
+Vikilugʻat vikidir, yaʼni siz uni bemalol tahrir qilishingiz mumkin. Undagi maʼlumotlar Creative Commons Attribution-ShareAlike 3.0 Unported License va GNU Free Documentation License litsenziyalari boʻyicha nashr etiladi. Hissa qoʻshishni boshlashdan avval bizning yordam sahifalarimizni koʻrib chiqishingiz mumkin. Boshqa vikilarga qaraganda oʻzgacha qoidalarimiz bor. Xususan, sahifalarning tuzilishi boʻyicha qatʼiy qoidalarimiz hamda soʻzlarni kiritish boʻyicha belgilangan mezonlarimiz bor. Vikilugʻatga qanday hissa qoʻshishingiz mumkinligini bilmoqchi boʻlsangiz yangi sahifa yaratish va bor sahifalarni tahrir qilish haqida oʻqing, qumloqda tajribalar qilib koʻring yoki jamoa portaliga tashrif buyuring.
+Vikilug‘at:Kun soʻzi/Dekabr 15
+
+
+"
+                    android:justificationMode="inter_word"
+                    android:textSize="15sp"
+                    android:padding="20dp"
+                    android:fontFamily="@font/worksans_font"
+                    android:textColor="@color/white"
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/homeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/home"
+                android:background="@color/infoQuizBarColor1"
+                android:padding="15dp"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/quizButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/quiz"
+                    android:background="@color/infoQuizBarColor1"
+                    android:padding="15dp"
+                    app:tint="@color/white" />
+            </FrameLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/countries"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/countries"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InfoApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".presentation.country_info.CountryInfo"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.finish_quiz.FinishQuizTest"
+            android:exported="false" />
+        <activity android:name=".presentation.category.CategoryActivity"/>
+
+        <activity
+            android:name=".presentation.start_quiz.StartQuizTest"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.country.Country_activity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.quiz.QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.main.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
