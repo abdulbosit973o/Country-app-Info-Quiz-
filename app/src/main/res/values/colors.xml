@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="infoAppBackground">#21252F</color>
     <color name="infoQuizBarColor1">#003966</color>
+    <color name="infoQuizBarColor11">#B3003966</color>
     <color name="infoQuizBarColor2">#3F9CFB</color>
     <color name="custom_color">#8816CFE6</color>
 </resources>

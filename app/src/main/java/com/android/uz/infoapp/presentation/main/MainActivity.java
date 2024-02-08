@@ -29,9 +29,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
-        getWindow().getDecorView().setSystemUiVisibility(uiOptions);
-
 
 //
 //        ArrayList<Integer> image = new ArrayList<>();
@@ -60,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 //            startActivity(intent);
 //        });
         findViewById(R.id.quizButton).setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, QuizActivity.class));
+            startActivity(new Intent(MainActivity.this, CategoryActivity.class));
         });
 
         findViewById(R.id.allCountries).setOnClickListener(v -> {

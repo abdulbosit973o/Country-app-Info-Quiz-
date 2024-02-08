@@ -2,6 +2,7 @@ package com.android.uz.infoapp.presentation.category;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.cardview.widget.CardView;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -27,7 +28,8 @@ public class CategoryActivity extends AppCompatActivity implements CategoryContr
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
         myPref = MySharedPreferences.getInstance(this);
-
+//        CardView cardView = findViewById(R.id.homeBtn);
+//        cardView.setCardBackgroundColor(Color.parseColor("#B3003966"));
 
 
 //        findViewById(R.id.homeButton).setOnClickListener(v -> finish());

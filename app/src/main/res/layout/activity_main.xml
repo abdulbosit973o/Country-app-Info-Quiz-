@@ -10,29 +10,29 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/infoQuizBarColor1"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/infoQuizBarColor1">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|start"
             android:layout_marginLeft="20dp"
-            android:textColor="@color/white"
             android:fontFamily="@font/titanone_regular"
             android:text="Select Region"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/recycler"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:background="@color/infoAppBackground"-->
-<!--        android:layout_weight="10"-->
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recycler"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:background="@color/infoAppBackground"-->
+    <!--        android:layout_weight="10"-->
 
-<!--        />-->
+    <!--        />-->
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -58,16 +58,17 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="8dp"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="0dp">
 
                         <ImageView
                             android:id="@+id/allCountries"
-                            android:background="?android:selectableItemBackgroundBorderless"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:layout_gravity="center"
+                            android:background="?android:selectableItemBackgroundBorderless"
                             android:scaleType="centerCrop"
 
 
@@ -95,15 +96,15 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="8dp"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="0dp">
 
                         <ImageView
                             android:id="@+id/africa"
-                            android:background="?android:selectableItemBackgroundBorderless"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
+                            android:background="?android:selectableItemBackgroundBorderless"
                             android:scaleType="centerCrop"
                             android:src="@drawable/africa1" />
                     </androidx.cardview.widget.CardView>
@@ -128,15 +129,15 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="8dp"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="0dp">
 
                         <ImageView
                             android:id="@+id/europe"
-                            android:background="?android:selectableItemBackgroundBorderless"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
+                            android:background="?android:selectableItemBackgroundBorderless"
                             android:scaleType="centerCrop"
                             android:src="@drawable/europe1" />
                     </androidx.cardview.widget.CardView>
@@ -162,17 +163,17 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="8dp"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="0dp">
 
                         <ImageView
                             android:id="@+id/asia"
-                            android:background="?android:selectableItemBackgroundBorderless"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
+                            android:background="?android:selectableItemBackgroundBorderless"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/asia1"/>
+                            android:src="@drawable/asia1" />
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -196,15 +197,15 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_margin="8dp"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="0dp">
 
                         <ImageView
                             android:id="@+id/australia"
-                            android:background="?android:selectableItemBackgroundBorderless"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
+                            android:background="?android:selectableItemBackgroundBorderless"
                             android:scaleType="centerCrop"
                             android:src="@drawable/australia" />
                     </androidx.cardview.widget.CardView>
@@ -229,15 +230,18 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:background="?selectableItemBackground"
                         app:cardCornerRadius="10dp"
                         app:cardElevation="0dp">
 
                         <ImageView
                             android:id="@+id/americas"
-                            android:background="?android:selectableItemBackgroundBorderless"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
+                            android:background="?android:selectableItemBackgroundBorderless"
                             android:scaleType="centerCrop"
                             android:src="@drawable/americas" />
                     </androidx.cardview.widget.CardView>
@@ -265,40 +269,37 @@
         android:background="#fff">
 
         <FrameLayout
+            android:id="@+id/homeButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/homeButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#012E51"
+                android:padding="15dp"
                 android:src="@drawable/home"
-                android:tint="@color/white"
-                android:background="@color/infoQuizBarColor1"
-                android:padding="15dp"/>
+                app:tint="@color/white" />
         </FrameLayout>
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+
+        <FrameLayout
+            android:id="@+id/quizButton"
             android:layout_width="0dp"
+            android:background="?selectableItemBackground"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <FrameLayout
-                android:layout_width="0dp"
+            <ImageView
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:background="@color/infoQuizBarColor1"
+                android:padding="15dp"
+                android:src="@drawable/quiz"
+                app:tint="@color/white" />
+        </FrameLayout>
 
-                <ImageView
-                    android:id="@+id/quizButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/quiz"
-                    android:background="@color/infoQuizBarColor1"
-                    android:padding="15dp"
-                    app:tint="@color/white" />
-            </FrameLayout>
-        </androidx.appcompat.widget.LinearLayoutCompat>
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>

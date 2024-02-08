@@ -11,8 +11,8 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/infoQuizBarColor1"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:background="@color/infoQuizBarColor1">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -40,50 +40,52 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="15dp"
+            android:layout_marginHorizontal="12dp"
             android:background="#21252F">
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="350dp"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginBottom="16dp"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
+                        android:layout_marginTop="16dp"
                         android:layout_weight="0.7">
 
                         <androidx.appcompat.widget.AppCompatImageView
                             android:id="@+id/img_first_quiz"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
                             android:src="@drawable/flags"
-                            android:tint="#B31F8023"
-                            android:scaleType="centerCrop"/>
+                            android:tint="#B31F8023" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:textSize="16sp"
-                            android:text="Capitals quiz"
                             android:fontFamily="@font/titanone_regular"
-                            android:textColor="@color/white"/>
+                            android:text="Capitals quiz"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="20dp"
-                            android:text="Find the capital of country"
                             android:fontFamily="@font/titanone_regular"
-                            android:textColor="@color/white"/>
+                            android:text="Find the capital of country"
+                            android:textColor="@color/white" />
 
 
                     </androidx.cardview.widget.CardView>
@@ -99,33 +101,35 @@
                             android:layout_height="0dp"
                             android:layout_weight="2"
                             android:orientation="vertical">
+
                             <androidx.appcompat.widget.LinearLayoutCompat
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1.8">
+
                                 <FrameLayout
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1">
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="100+"
-                                        android:layout_marginBottom="10dp"
-                                        android:textColor="@color/white"
-                                        android:textSize="28sp"
-                                        android:layout_gravity="center"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Question count"
-                                        android:textSize="15sp"
-                                        android:fontFamily="@font/worksans_font"
-                                        android:textColor="#9A9696"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="100+"
+                                        android:textColor="@color/white"
+                                        android:textSize="28sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:layout_marginTop="15dp"
-                                        />
+                                        android:fontFamily="@font/worksans_font"
+                                        android:text="Question count"
+                                        android:textColor="#9A9696"
+                                        android:textSize="15sp" />
                                 </FrameLayout>
 
                                 <FrameLayout
@@ -146,13 +150,12 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Your best score"
-                                        android:textSize="15sp"
-                                        android:fontFamily="@font/worksans_font"
-                                        android:textColor="#9A9696"
                                         android:layout_gravity="center"
                                         android:layout_marginTop="15dp"
-                                        />
+                                        android:fontFamily="@font/worksans_font"
+                                        android:text="Your best score"
+                                        android:textColor="#9A9696"
+                                        android:textSize="15sp" />
                                 </FrameLayout>
 
                             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -165,23 +168,21 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="60 seconds"
-                                    android:textSize="16sp"
-                                    android:textColor="@color/white"
                                     android:layout_gravity="center"
                                     android:layout_marginBottom="5dp"
-                                    />
+                                    android:text="60 seconds"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="duration"
-                                    android:textSize="15sp"
-                                    android:fontFamily="@font/worksans_font"
-                                    android:textColor="#9A9696"
                                     android:layout_gravity="center"
                                     android:layout_marginTop="10dp"
-                                    />
+                                    android:fontFamily="@font/worksans_font"
+                                    android:text="duration"
+                                    android:textColor="#9A9696"
+                                    android:textSize="15sp" />
                             </FrameLayout>
                         </LinearLayout>
 
@@ -191,17 +192,17 @@
                             android:layout_height="0dp"
                             android:layout_weight="0.7"
                             android:background="@color/infoQuizBarColor1">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/titanone_regular"
                                 android:text="Start"
                                 android:textColor="@color/white"
-                                android:textSize="22sp"
-                                android:layout_gravity="center"
-                                android:fontFamily="@font/titanone_regular"/>
+                                android:textSize="22sp" />
                         </FrameLayout>
                     </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -209,7 +210,7 @@
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="350dp"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginBottom="16dp"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
@@ -221,26 +222,27 @@
                             android:id="@+id/img_second_quiz"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/flags"
                             android:scaleType="centerCrop"
+                            android:src="@drawable/flags"
                             android:tint="#B34E12B8" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:textSize="16sp"
-                            android:text="Flags quiz"
                             android:fontFamily="@font/titanone_regular"
-                            android:textColor="@color/white"/>
+                            android:text="Flags quiz"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="20dp"
-                            android:text="Find the country matches given flag"
                             android:fontFamily="@font/titanone_regular"
-                            android:textColor="@color/white"/>
+                            android:text="Find the country matches given flag"
+                            android:textColor="@color/white" />
 
 
                     </androidx.cardview.widget.CardView>
@@ -256,33 +258,35 @@
                             android:layout_height="0dp"
                             android:layout_weight="2"
                             android:orientation="vertical">
+
                             <androidx.appcompat.widget.LinearLayoutCompat
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1.8">
+
                                 <FrameLayout
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1">
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="100+"
-                                        android:layout_marginBottom="10dp"
-                                        android:textColor="@color/white"
-                                        android:textSize="28sp"
-                                        android:layout_gravity="center"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Question count"
-                                        android:textSize="15sp"
-                                        android:fontFamily="@font/worksans_font"
-                                        android:textColor="#9A9696"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="100+"
+                                        android:textColor="@color/white"
+                                        android:textSize="28sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:layout_marginTop="15dp"
-                                        />
+                                        android:fontFamily="@font/worksans_font"
+                                        android:text="Question count"
+                                        android:textColor="#9A9696"
+                                        android:textSize="15sp" />
                                 </FrameLayout>
 
                                 <FrameLayout
@@ -294,22 +298,21 @@
                                         android:id="@+id/flagBest"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="0"
+                                        android:layout_gravity="center"
                                         android:layout_marginBottom="10dp"
+                                        android:text="0"
                                         android:textColor="@color/white"
-                                        android:textSize="28sp"
-                                        android:layout_gravity="center"/>
+                                        android:textSize="28sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Your best score"
-                                        android:textSize="15sp"
-                                        android:fontFamily="@font/worksans_font"
-                                        android:textColor="#9A9696"
                                         android:layout_gravity="center"
                                         android:layout_marginTop="15dp"
-                                        />
+                                        android:fontFamily="@font/worksans_font"
+                                        android:text="Your best score"
+                                        android:textColor="#9A9696"
+                                        android:textSize="15sp" />
                                 </FrameLayout>
 
                             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -322,23 +325,21 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="60 seconds"
-                                    android:textSize="16sp"
-                                    android:textColor="@color/white"
                                     android:layout_gravity="center"
                                     android:layout_marginBottom="5dp"
-                                    />
+                                    android:text="60 seconds"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="duration"
-                                    android:textSize="15sp"
-                                    android:fontFamily="@font/worksans_font"
-                                    android:textColor="#9A9696"
                                     android:layout_gravity="center"
                                     android:layout_marginTop="10dp"
-                                    />
+                                    android:fontFamily="@font/worksans_font"
+                                    android:text="duration"
+                                    android:textColor="#9A9696"
+                                    android:textSize="15sp" />
                             </FrameLayout>
                         </LinearLayout>
 
@@ -348,17 +349,17 @@
                             android:layout_height="0dp"
                             android:layout_weight="0.7"
                             android:background="@color/infoQuizBarColor1">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/titanone_regular"
                                 android:text="Start"
                                 android:textColor="@color/white"
-                                android:textSize="22sp"
-                                android:layout_gravity="center"
-                                android:fontFamily="@font/titanone_regular"/>
+                                android:textSize="22sp" />
                         </FrameLayout>
                     </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
@@ -366,7 +367,7 @@
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="350dp"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginBottom="16dp"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
@@ -378,26 +379,27 @@
                             android:id="@+id/img_third_quiz"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
                             android:src="@drawable/flags"
-                            android:tint="#B3FF5722"
-                            android:scaleType="centerCrop"/>
+                            android:tint="#B3FF5722" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:textSize="16sp"
-                            android:text="Regions Quiz"
                             android:fontFamily="@font/titanone_regular"
-                            android:textColor="@color/white"/>
+                            android:text="Regions Quiz"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="20dp"
-                            android:text="Find the country located in given flag"
                             android:fontFamily="@font/titanone_regular"
-                            android:textColor="@color/white"/>
+                            android:text="Find the country located in given flag"
+                            android:textColor="@color/white" />
 
 
                     </androidx.cardview.widget.CardView>
@@ -413,33 +415,35 @@
                             android:layout_height="0dp"
                             android:layout_weight="2"
                             android:orientation="vertical">
+
                             <androidx.appcompat.widget.LinearLayoutCompat
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="1.8">
+
                                 <FrameLayout
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1">
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="100+"
-                                        android:layout_marginBottom="10dp"
-                                        android:textColor="@color/white"
-                                        android:textSize="28sp"
-                                        android:layout_gravity="center"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Question count"
-                                        android:textSize="15sp"
-                                        android:fontFamily="@font/worksans_font"
-                                        android:textColor="#9A9696"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="100+"
+                                        android:textColor="@color/white"
+                                        android:textSize="28sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
                                         android:layout_gravity="center"
                                         android:layout_marginTop="15dp"
-                                        />
+                                        android:fontFamily="@font/worksans_font"
+                                        android:text="Question count"
+                                        android:textColor="#9A9696"
+                                        android:textSize="15sp" />
                                 </FrameLayout>
 
                                 <FrameLayout
@@ -451,22 +455,21 @@
                                         android:id="@+id/regionBest"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="0"
+                                        android:layout_gravity="center"
                                         android:layout_marginBottom="10dp"
+                                        android:text="0"
                                         android:textColor="@color/white"
-                                        android:textSize="28sp"
-                                        android:layout_gravity="center"/>
+                                        android:textSize="28sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Your best score"
-                                        android:textSize="15sp"
-                                        android:fontFamily="@font/worksans_font"
-                                        android:textColor="#9A9696"
                                         android:layout_gravity="center"
                                         android:layout_marginTop="15dp"
-                                        />
+                                        android:fontFamily="@font/worksans_font"
+                                        android:text="Your best score"
+                                        android:textColor="#9A9696"
+                                        android:textSize="15sp" />
                                 </FrameLayout>
 
                             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -479,23 +482,21 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="60 seconds"
-                                    android:textSize="16sp"
-                                    android:textColor="@color/white"
                                     android:layout_gravity="center"
                                     android:layout_marginBottom="5dp"
-                                    />
+                                    android:text="60 seconds"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="duration"
-                                    android:textSize="15sp"
-                                    android:fontFamily="@font/worksans_font"
-                                    android:textColor="#9A9696"
                                     android:layout_gravity="center"
                                     android:layout_marginTop="10dp"
-                                    />
+                                    android:fontFamily="@font/worksans_font"
+                                    android:text="duration"
+                                    android:textColor="#9A9696"
+                                    android:textSize="15sp" />
                             </FrameLayout>
                         </LinearLayout>
 
@@ -505,21 +506,20 @@
                             android:layout_height="0dp"
                             android:layout_weight="0.7"
                             android:background="@color/infoQuizBarColor1">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/titanone_regular"
                                 android:text="Start"
                                 android:textColor="@color/white"
-                                android:textSize="22sp"
-                                android:layout_gravity="center"
-                                android:fontFamily="@font/titanone_regular"/>
+                                android:textSize="22sp" />
                         </FrameLayout>
                     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-
                 </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -533,40 +533,35 @@
         android:background="#fff">
 
         <FrameLayout
+            android:id="@+id/homeBtn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/homeBtn"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/home"
                 android:background="@color/infoQuizBarColor1"
                 android:padding="15dp"
+                android:src="@drawable/home"
                 app:tint="@color/white" />
         </FrameLayout>
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <FrameLayout
+            android:id="@+id/quizButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <FrameLayout
-                android:layout_width="0dp"
+            <ImageView
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/quizButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/quiz"
-                    android:background="@color/infoQuizBarColor1"
-                    android:padding="15dp"
-                    app:tint="@color/white" />
-            </FrameLayout>
-        </androidx.appcompat.widget.LinearLayoutCompat>
+                android:background="#012E51"
+                android:padding="15dp"
+                android:src="@drawable/quiz"
+                app:tint="@color/white" />
+        </FrameLayout>
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
